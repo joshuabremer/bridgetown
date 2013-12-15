@@ -13,5 +13,9 @@ come into play. Have fun!
 ******************************************************************/
 
 
-
+@media (min-width: 783px) {
+  body.admin-bar .navbar-fixed-top{
+    top: 28px;
+  }
+}
 

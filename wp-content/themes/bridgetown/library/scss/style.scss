@@ -73,33 +73,6 @@ variables.scss, custom.scss or any additional LESS files.
 @import "custom"; // custom css for wordpress
 
 
-
-/*
-RETINA (2x RESOLUTION DEVICES)
-This applies to the retina iPhone (4s) and iPad (2,3) along with
-other displays with a 2x resolution. You can also create a media
-query for retina AND a certain size if you want. Go Nuts.
-*/
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-       only screen and (min--moz-device-pixel-ratio: 1.5),
-       only screen and (min-device-pixel-ratio: 1.5) {
-
-	// styles in 2x.scss
-	@import "2x";
-
-} // end of media query
-
-/*
-iPHONE 5 MEDIA QUERY
-Want to get fancy for no good reason? Knock yourself out.
-*/
-@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  
-  // iPhone 5 or iPod Touch 5th generation styles (you can include your own file if you want)
-  
-}
-
-
 // styles in base.scss
 @import "base";
 
@@ -139,4 +112,29 @@ This is for the larger monitors and possibly full screen viewers.
         @import "1200up";
 
 } // end of media query
+
+/*
+RETINA (2x RESOLUTION DEVICES)
+This applies to the retina iPhone (4s) and iPad (2,3) along with
+other displays with a 2x resolution. You can also create a media
+query for retina AND a certain size if you want. Go Nuts.
+*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min--moz-device-pixel-ratio: 1.5),
+       only screen and (min-device-pixel-ratio: 1.5) {
+
+  // styles in 2x.scss
+  @import "2x";
+
+} // end of media query
+
+/*
+iPHONE 5 MEDIA QUERY
+Want to get fancy for no good reason? Knock yourself out.
+*/
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  
+  // iPhone 5 or iPod Touch 5th generation styles (you can include your own file if you want)
+  
+}
 

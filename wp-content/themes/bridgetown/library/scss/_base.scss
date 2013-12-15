@@ -4,8 +4,8 @@ Author: Dan Brown
 
 Stylesheet: Custom Stylesheet
 
-If you really want to customize bootstrap, you should start with 
-custom-variables.less.  
+If you really want to customize bootstrap, you should start with
+custom-variables.less.
 
 custom.less is a WIP
 
@@ -27,10 +27,23 @@ custom.less is a WIP
 
 ******************************************************************/
 
+@font-face {
+    font-family: 'WalkwaySemiBoldRegular';
+    src: url('../fonts/walkway_semibold-webfont.eot');
+    src: url('../fonts/walkway_semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/walkway_semibold-webfont.woff') format('woff'),
+         url('../fonts/walkway_semibold-webfont.ttf') format('truetype'),
+         url('../fonts/walkway_semibold-webfont.svg#WalkwaySemiBoldRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 /* Admin Top Navigation fixes */
 
-body.admin-bar .navbar-fixed-top{ 
-        top: 28px; 
+body.admin-bar .navbar-fixed-top{
+    top: 46px;
 }
 
 /* CSS for sample home page */
@@ -129,7 +142,7 @@ a, a:visited {
 ******************************************************************/
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-
+  font-family:"WalkwaySemiBoldRegular";
   a {}
 }
 
@@ -148,7 +161,9 @@ h5, .h5 {}
 *********************/
 
 .header {
-
+  .navbar-brand {
+    font-family:"WalkwaySemiBoldRegular";
+  }
   #logo {}
 
   nav {
@@ -235,12 +250,17 @@ and more scalable.
 *********************/
 
 #content {
-  background-color:#2A2A2A;
+  
   color:white;
   padding-top: 40px;
   min-height: 600px;
+  margin-left:20px;
+  margin-right:20px;
 
-  #main {}
+  #main {
+    background-color:#2A2A2A;
+    padding:20px;
+  }
 }
 
     .hentry {
@@ -288,7 +308,7 @@ and more scalable.
       border-bottom: 1px solid #eeeeee;
     }
 
-    .archive-title { 
+    .archive-title {
       margin-top: 0;
     }
 
