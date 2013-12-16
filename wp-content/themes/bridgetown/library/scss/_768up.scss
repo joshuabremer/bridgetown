@@ -34,6 +34,8 @@ come into play. Have fun!
 
   nav {
     ul.nav {
+      &:before{content:"";display:none;}
+      &:after{content:"";display:none;}
       width:100%;
       display: table;
       table-layout: fixed; /* the magic dust that ensures equal width */

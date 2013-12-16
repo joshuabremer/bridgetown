@@ -44,7 +44,7 @@
     <header class="header">
 
       <nav role="navigation">
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar navbar-inverse">
           <div class="container">
             <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
             <div class="navbar-header">
@@ -62,9 +62,12 @@
               <?php bones_main_nav(); ?>
 
             </div>
+            <p style="text-align:center;">
+              <img src="<?php echo get_template_directory_uri(); ?>/library/images/bridgetown-logo.png" />
+            </p>
+            <div class="clearfix"></div>
           </div>
         </div>
 
       </nav>
-
 		</header> <?php // end header ?>

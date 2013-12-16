@@ -6225,6 +6225,12 @@ you can add resource intensive styles.
     display: table;
     table-layout: fixed;
     /* the magic dust that ensures equal width */ }
+    .header nav ul.nav:before {
+      content: "";
+      display: none; }
+    .header nav ul.nav:after {
+      content: "";
+      display: none; }
     .header nav ul.nav > li {
       opacity: 1;
       display: table-cell;
