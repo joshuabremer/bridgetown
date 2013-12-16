@@ -62,12 +62,12 @@
               <?php bones_main_nav(); ?>
 
             </div>
-            <p style="text-align:center;">
-              <img src="<?php echo get_template_directory_uri(); ?>/library/images/bridgetown-logo.png" />
-            </p>
-            <div class="clearfix"></div>
+
           </div>
         </div>
 
       </nav>
+            <p style="text-align:center;">
+              <img style="width:200px;" src="<?php echo get_template_directory_uri(); ?>/library/images/bridgetown-logo-white.svg" />
+            </p>
 		</header> <?php // end header ?>
