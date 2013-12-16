@@ -75,6 +75,8 @@ body {
   /* padding-top: $navbar-height; //THIS IS IF YOU HAVE top-nav-fixed ENABLED */
   background: black url('../images/hawthorne-bridge.jpg') no-repeat top center;
   background-size: 100% auto;
+  font-size:16px;
+  line-height: 1.6em;
 }
 
 hr {
@@ -182,7 +184,12 @@ h5, .h5 {}
     font-family:"WalkwaySemiBoldRegular";
   }
   #logo {}
-
+  .header-dates {
+    color:white;
+    font-family:"WalkwaySemiBoldRegular";
+    font-size:24px;
+    text-align:center;
+  }
   nav {
     font-family:"rockwellregular";
     ul.nav {
@@ -433,6 +440,7 @@ and more scalable.
         margin: 0 0 1.5em 0;
         max-width: 100%;
         height: auto;
+        border:1px solid #444444;
       }
 
       /*
@@ -441,10 +449,19 @@ and more scalable.
       and floating images at the next breakpoint,
       but it's up to you. Feel free to change it up.
       */
-      .alignleft, img.alignleft {}
-      .alignright, img.alignright {}
-      .aligncenter, img.aligncenter {}
+      .alignleft, img.alignleft {float: left;margin: 1em 1em 1em 0;}
+      .alignright, img.alignright {float: right;margin: 1em 0em 1em 1em;}
+      .aligncenter, img.aligncenter {display:block; margin:1em 0;}
 
+      aside {
+        clear:both;
+        border-top: 1px solid #666666;
+        border-bottom: 1px solid #666666;
+        display:block;
+        margin:1em auto;
+        padding:1em 0;
+        text-align:center;
+      }
       video, object {
         max-width: 100%;
         height: auto;

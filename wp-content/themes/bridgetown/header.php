@@ -53,8 +53,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <img style="height:40px; float:left;" src="<?php echo get_template_directory_uri(); ?>/library/images/bridgetown-logo-white.svg" />
-              <a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo('name'); ?></a>
+                <a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo('name'); ?></a>
 
             </div>
 
@@ -67,7 +66,21 @@
         </div>
 
       </nav>
-            <p style="text-align:center;">
+      <div class="container" style="margin:1em auto; text-align:center;">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5">
               <img style="width:200px;" src="<?php echo get_template_directory_uri(); ?>/library/images/bridgetown-logo-white.svg" />
-            </p>
+            </div>
+            <div class="col-sm-5">
+              <span class="header-dates">
+                Thursday, April 10th -<br />
+                Sunday, April 13th 2014<br />
+                Portland, OR
+              </span>
+            </div>
+            <div class="col-sm-1"></div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
 		</header> <?php // end header ?>

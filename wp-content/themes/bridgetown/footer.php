@@ -37,10 +37,10 @@
         <div class="container">
           <div class="row">
             <div class="col-md-4 copyright">
-              &copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.
+              &copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>
             </div>
             <div class="col-md-4 col-md-offset-4 attribution">
-              Built by <a target="_blank" href="http://www.danvswild.com">Dan vs Wild</a>
+              Built by <a target="_blank" href="http://www.joshuabremer.com">Josh Bremer</a>
             </div>
           </div> <!-- end .row -->
         </div>

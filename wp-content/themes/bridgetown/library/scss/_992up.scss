@@ -1,10 +1,36 @@
 /******************************************************************
-Site Name: 
-Author: 
+Site Name:
+Author:
 
 Stylesheet: Desktop Stylsheet
 
 This is the desktop size. It's larger than an iPad so it will only
-be seen on the Desktop. 
+be seen on the Desktop.
 
 ******************************************************************/
+
+.header {
+  .navbar-brand {
+  }
+  #logo {}
+
+  nav {
+    ul.nav {
+      > li {
+        font-size: 15px;
+      }
+    }
+  }
+}
+#content {
+  aside {
+    float:right;
+    width:33%;
+    margin:1em 0 1em 3%;
+    clear:right;
+    border:0;
+    iframe, img {
+      max-width:100%;
+    }
+  }
+}

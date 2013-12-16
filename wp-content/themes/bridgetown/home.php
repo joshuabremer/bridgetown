@@ -4,32 +4,13 @@
 
       <div id="content" class="row clearfix">
 
-<?php
-////////////////////////////////////////////////////////////////////////////////
-//////////////////// TOP CONTENT ////////////////////
-////////////////////////////////////////////////////////////////////////////////
-?>
-
-            <div id="main" class="col-md-8 clearfix" role="main">
-              <h1>Bridgetown Comedy Festival 2014!</h1>
-              <?php
-                $front_page = get_page_by_title( 'Front Page' );
-              ?>
-              <article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article">
-
-                  <section class="entry-content clearfix">
-                    <?php echo wpautop($front_page->post_content); ?>
-                  </section>
-              </article>
-
 
 <?php
 ////////////////////////////////////////////////////////////////////////////////
 //////////////////// BLOG ////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 ?>
-<hr />
-<h1>News</h1>
+
  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
               <article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article">

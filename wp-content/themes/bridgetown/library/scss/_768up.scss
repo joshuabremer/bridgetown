@@ -44,6 +44,7 @@ come into play. Have fun!
         display: table-cell;
         margin-right:10px;
         float:none;
+        font-size: 13px;
         a {
           border:0;
           border-top:10px solid #7c54bd;
@@ -51,10 +52,18 @@ come into play. Have fun!
           padding-left:0;
           margin-right: 10px;
           background:transparent;
+          -webkit-transition: all 500ms ease;
+          -moz-transition: all 500ms ease;
+          -ms-transition: all 500ms ease;
+          -o-transition: all 500ms ease;
+          transition: all 500ms ease;
+          &:hover {
+            margin-left: 10px;
+          }
         }
         &.active a {
             background:transparent;
-          }
+        }
 
         &:first-child {}
 
@@ -98,6 +107,10 @@ come into play. Have fun!
       }
     }
   }
+}
+
+#content {
+
 }
 
 
