@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Crete+Round);
 /******************************************************************
 Site Name: Brew
 Author: Dan Brown
@@ -5691,6 +5692,12 @@ body {
   padding-top: 50px;
   background: black url("../images/hawthorne-bridge.jpg") no-repeat top center; }
 
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #666666; }
+
 /********************
 02. WORDPRESS BODY CLASSES
     style a page via class
@@ -5758,6 +5765,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 *********************/
 .header .navbar-brand {
   font-family: "WalkwaySemiBoldRegular"; }
+.header nav {
+  font-family: "Crete Round"; }
+  .header nav ul.nav li a {
+    color: white; }
 
 /*********************
 07. NAVIGATION STYLES
@@ -5783,7 +5794,8 @@ and more scalable.
   padding-top: 40px;
   min-height: 600px;
   margin-left: 20px;
-  margin-right: 20px; }
+  margin-right: 20px;
+  word-wrap: break-word; }
   #content #main {
     background-color: #2A2A2A;
     padding: 20px; }
@@ -5794,7 +5806,7 @@ and more scalable.
   text-decoration: none;
   color: #555555; }
 .hentry footer {
-  border-top: 1px solid #eee;
+  border-top: 1px solid #666666;
   padding: 5px 0 0;
   margin-top: 10px;
   font-size: 12px; }
@@ -5816,7 +5828,7 @@ and more scalable.
   margin-top: 0;
   padding-bottom: 9px;
   margin: 0px 0 20px;
-  border-bottom: 1px solid #eeeeee; }
+  border-bottom: 1px solid #666666; }
 
 .archive-title {
   margin-top: 0; }
@@ -6171,7 +6183,29 @@ you can add resource intensive styles.
   and other resources. You'll also notice the grid starts to
   come into play. Have fun!
   
-  ******************************************************************/ }
+  ******************************************************************/
+  .navbar {
+    background: transparent; }
+    .navbar .navbar-header {
+      display: none; }
+
+  .header .navbar-brand {
+    font-family: "WalkwaySemiBoldRegular"; }
+  .header nav ul.nav {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    /* the magic dust that ensures equal width */ }
+    .header nav ul.nav > li {
+      display: table-cell;
+      margin-right: 10px;
+      float: none;
+      width: 84px; }
+      .header nav ul.nav > li a {
+        border-top: 10px solid red;
+        padding-top: 0;
+        padding-left: 0;
+        margin-right: 10px; } }
 @media only screen and (min-width: 768px) and (min-width: 783px) {
   body.admin-bar .navbar-fixed-top {
     top: 28px; } }

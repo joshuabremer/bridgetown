@@ -63,8 +63,8 @@
 
             </div>
           </div>
-        </div> 
-        
+        </div>
+
       </nav>
 
 		</header> <?php // end header ?>

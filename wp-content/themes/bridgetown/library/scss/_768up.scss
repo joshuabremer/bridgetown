@@ -18,4 +18,43 @@ come into play. Have fun!
     top: 28px;
   }
 }
+.navbar {
+  background:transparent;
+  .navbar-header {
+    display:none;
+  }
+}
+
+.header {
+  .navbar-brand {
+    font-family:"WalkwaySemiBoldRegular";
+  }
+  #logo {}
+
+  nav {
+    ul.nav {
+      width:100%;
+      display: table;
+      table-layout: fixed; /* the magic dust that ensures equal width */
+      > li {
+        display: table-cell;
+        margin-right:10px;
+        float:none;
+        width:84px;
+        a {
+          border-top:10px solid red;
+          padding-top:0;
+          padding-left:0;
+          margin-right: 10px;
+        }
+
+        &:first-child {}
+
+        &:last-child {}
+        > li + li {}
+      }
+    }
+  }
+}
+
 

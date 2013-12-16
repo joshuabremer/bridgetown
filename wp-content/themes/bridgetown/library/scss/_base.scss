@@ -26,6 +26,7 @@ custom.less is a WIP
 13. FOOTER STYLES
 
 ******************************************************************/
+@import url(http://fonts.googleapis.com/css?family=Crete+Round);
 
 @font-face {
     font-family: 'WalkwaySemiBoldRegular';
@@ -65,6 +66,13 @@ html, body {
 body {
   padding-top: $navbar-height; //THIS IS IF YOU HAVE top-nav-fixed ENABLED
   background: black url('../images/hawthorne-bridge.jpg') no-repeat top center;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #666666;
 }
 
 /********************
@@ -167,9 +175,12 @@ h5, .h5 {}
   #logo {}
 
   nav {
+    font-family:"Crete Round";
     ul.nav {
       li {
-        a {}
+        a {
+          color:white;
+        }
 
         &:first-child {}
 
@@ -250,12 +261,13 @@ and more scalable.
 *********************/
 
 #content {
-  
+
   color:white;
   padding-top: 40px;
   min-height: 600px;
   margin-left:20px;
   margin-right:20px;
+  word-wrap: break-word;
 
   #main {
     background-color:#2A2A2A;
@@ -277,7 +289,7 @@ and more scalable.
         }
       }
       footer {
-        border-top: 1px solid #eee;
+        border-top: 1px solid #666666;
         padding: 5px 0 0;
         margin-top: 10px;
         font-size: 12px;
@@ -305,7 +317,7 @@ and more scalable.
       margin-top: 0;
       padding-bottom: 9px;
       margin: 0px 0 20px;
-      border-bottom: 1px solid #eeeeee;
+      border-bottom: 1px solid #666666;
     }
 
     .archive-title {
