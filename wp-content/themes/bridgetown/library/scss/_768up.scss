@@ -19,6 +19,7 @@ come into play. Have fun!
   }
 }
 .navbar {
+  border:0;
   background:transparent;
   .navbar-header {
     display:none;
@@ -37,21 +38,61 @@ come into play. Have fun!
       display: table;
       table-layout: fixed; /* the magic dust that ensures equal width */
       > li {
+        opacity:1;
         display: table-cell;
         margin-right:10px;
         float:none;
-        width:84px;
         a {
-          border-top:10px solid red;
+          border:0;
+          border-top:10px solid #7c54bd;
           padding-top:0;
           padding-left:0;
           margin-right: 10px;
+          background:transparent;
         }
+        &.active a {
+            background:transparent;
+          }
 
         &:first-child {}
 
         &:last-child {}
-        > li + li {}
+      }
+      > li + li a {
+        border:0;
+        border-top:10px solid #e79b50;
+      }
+      > li + li + li a {
+        border:0;
+        border-top:10px solid #5ea527;
+      }
+      > li + li + li + li a {
+        border:0;
+        border-top:10px solid #d74c78;
+      }
+      > li + li + li + li + li  a {
+        border:0;
+        border-top:10px solid #7c54bd;
+      }
+      > li + li + li + li + li + li  a {
+        border:0;
+        border-top:10px solid #b93013;
+      }
+      > li + li + li + li + li + li + li  a {
+        border:0;
+        border-top:10px solid #e6cc56;
+      }
+      > li + li + li + li + li + li + li + li a {
+        border:0;
+        border-top:10px solid #d9e6fe;
+      }
+      > li + li + li + li + li + li + li + li + li a {
+        border:0;
+        border-top:10px solid #97f935;
+      }
+      > li + li + li + li + li + li + li + li + li + li a {
+        border:0;
+        border-top:10px solid #7c54bd;
       }
     }
   }

@@ -26,7 +26,16 @@ custom.less is a WIP
 13. FOOTER STYLES
 
 ******************************************************************/
-@import url(http://fonts.googleapis.com/css?family=Crete+Round);
+@font-face {
+    font-family: 'rockwellregular';
+    src: url('../fonts/rock-webfont.eot');
+    src: url('../fonts/rock-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rock-webfont.woff') format('woff'),
+         url('../fonts/rock-webfont.ttf') format('truetype'),
+         url('../fonts/rock-webfont.svg#rockwellregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'WalkwaySemiBoldRegular';
@@ -37,7 +46,6 @@ custom.less is a WIP
          url('../fonts/walkway_semibold-webfont.svg#WalkwaySemiBoldRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 
@@ -66,6 +74,7 @@ html, body {
 body {
   padding-top: $navbar-height; //THIS IS IF YOU HAVE top-nav-fixed ENABLED
   background: black url('../images/hawthorne-bridge.jpg') no-repeat top center;
+  background-size: 100% auto;
 }
 
 hr {
@@ -175,16 +184,47 @@ h5, .h5 {}
   #logo {}
 
   nav {
-    font-family:"Crete Round";
+    font-family:"rockwellregular";
     ul.nav {
-      li {
+       > li {
+        color:white;
+        margin-bottom:5px;
+
         a {
-          color:white;
+          color:inherit;
+          border-left:10px solid #7c54bd;
         }
 
         &:first-child {}
 
         &:last-child {}
+      }
+      > li + li a {
+        border-left:10px solid #e79b50;
+      }
+      > li + li + li a {
+        border-left:10px solid #5ea527;
+      }
+      > li + li + li + li a {
+        border-left:10px solid #d74c78;
+      }
+      > li + li + li + li + li  a {
+        border-left:10px solid #7c54bd;
+      }
+      > li + li + li + li + li + li  a {
+        border-left:10px solid #b93013;
+      }
+      > li + li + li + li + li + li + li  a {
+        border-left:10px solid #e6cc56;
+      }
+      > li + li + li + li + li + li + li + li a {
+        border-left:10px solid #d9e6fe;
+      }
+      > li + li + li + li + li + li + li + li + li a {
+        border-left:10px solid #97f935;
+      }
+      > li + li + li + li + li + li + li + li + li + li a {
+        border-left:10px solid #7c54bd;
       }
     }
   }
@@ -268,10 +308,10 @@ and more scalable.
   margin-left:20px;
   margin-right:20px;
   word-wrap: break-word;
+  background-color:#2A2A2A;
+  padding:20px;
 
   #main {
-    background-color:#2A2A2A;
-    padding:20px;
   }
 }
 

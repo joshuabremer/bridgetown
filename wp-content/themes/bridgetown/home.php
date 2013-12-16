@@ -74,17 +74,19 @@
               $sponsor_page = get_page_by_title( 'Front Page Sponsors');
               //var_dump($sponsor_page->post_content);
             ?>
-            <div id="sidebar">
+            </div> <?php // end #main ?>
+            <div id="sidebar pull-right">
               <div id="sponsor-sidebar">
                 <?php if($sponsor_page->post_content <> "") { ?>
                 <h2>SPONSORED BY:</h2>
                 <div>
                   <?php echo wpautop($sponsor_page->post_content); ?>
+
                 </div>
                 <?php } ?>
               </div>
             </div>
-          </div> <?php // end #main ?>
+
 
 
       </div> <?php // end #content ?>
