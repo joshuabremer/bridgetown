@@ -72,7 +72,7 @@ html, body {
   /* height: 100%; */
 }
 body {
-  padding-top: $navbar-height; //THIS IS IF YOU HAVE top-nav-fixed ENABLED
+  /* padding-top: $navbar-height; //THIS IS IF YOU HAVE top-nav-fixed ENABLED */
   background: black url('../images/hawthorne-bridge.jpg') no-repeat top center;
   background-size: 100% auto;
 }
@@ -308,7 +308,7 @@ and more scalable.
   margin-left:20px;
   margin-right:20px;
   word-wrap: break-word;
-  background-color:#2A2A2A;
+  background-color: rgba(42,42,42,0.95);
   padding:20px;
 
   #main {

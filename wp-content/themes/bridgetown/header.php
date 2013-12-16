@@ -53,7 +53,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-
+              <img style="height:40px; float:left;" src="<?php echo get_template_directory_uri(); ?>/library/images/bridgetown-logo-white.svg" />
               <a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo('name'); ?></a>
 
             </div>
