@@ -971,3 +971,28 @@ and more scalable.
   }
 }
 
+.schedule-grid {
+  border:1px solid white;
+  td {
+    border:1px solid white;
+  }
+}
+.performer-list {
+  text-align:center;
+  .performer-tile {
+    margin-bottom:0.5em;
+    padding-bottom:0.5em;
+    border-bottom:1px solid #333;
+    clear:both;
+    img {
+      float:left;
+      margin-bottom:0px;
+    }
+    a {
+      font-family: 'WalkwaySemiBoldRegular';
+      color:white;
+      font-size:39px;
+    }
+  }
+}
+

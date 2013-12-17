@@ -175,16 +175,34 @@ function be_sample_metaboxes( $meta_boxes ) {
   $prefix = '_brew_'; // Prefix for all fields
   $meta_boxes[] = array(
     'id' => 'test_metabox',
-    'title' => 'Test Metabox',
-    'pages' => array('custom_type'), // post type
+    'title' => 'Event Info',
+    'pages' => array('event'), // post type
     'context' => 'normal',
     'priority' => 'high',
     'show_names' => true, // Show field names on the left
     'fields' => array(
       array(
-        'name' => 'Test Text',
-        'desc' => 'field description (optional)',
-        'id' => $prefix . 'test_text',
+        'name' => 'Price',
+        'desc' => '',
+        'id' => $prefix . 'event_price',
+        'type' => 'text_money'
+      ),
+      array(
+        'name' => 'Event Start',
+        'desc' => 'start of event (required)',
+        'id' => $prefix . 'event_start',
+        'type' => 'text_datetime_timestamp'
+      ),
+      array(
+        'name' => 'Event End',
+        'desc' => 'end of event (required)',
+        'id' => $prefix . 'event_end',
+        'type' => 'text_datetime_timestamp'
+      ),
+      array(
+        'name' => 'Venue',
+        'desc' => '',
+        'id' => $prefix . 'event_venue',
         'type' => 'text'
       ),
     ),

@@ -6217,6 +6217,26 @@ and more scalable.
   .homebanner .btn-primary {
     margin-left: 20px; }
 
+.schedule-grid {
+  border: 1px solid white; }
+  .schedule-grid td {
+    border: 1px solid white; }
+
+.performer-list {
+  text-align: center; }
+  .performer-list .performer-tile {
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #333;
+    clear: both; }
+    .performer-list .performer-tile img {
+      float: left;
+      margin-bottom: 0px; }
+    .performer-list .performer-tile a {
+      font-family: 'WalkwaySemiBoldRegular';
+      color: white;
+      font-size: 39px; }
+
 /*
 TABLET & SMALLER LAPTOPS
 This is the average viewing window. So Desktops, Laptops, and
@@ -6304,7 +6324,18 @@ you can add resource intensive styles.
       border-top: 10px solid #97f935; }
     .header nav ul.nav > li + li + li + li + li + li + li + li + li + li a {
       border: 0;
-      border-top: 10px solid #7c54bd; } }
+      border-top: 10px solid #7c54bd; }
+
+  .performer-list .performer-tile {
+    clear: none;
+    border: 0; }
+    .performer-list .performer-tile img {
+      float: none; }
+    .performer-list .performer-tile a {
+      margin: 1em 0;
+      font-size: 24px; }
+      .performer-list .performer-tile a:hover {
+        text-decoration: none; } }
 @media only screen and (min-width: 768px) and (min-width: 783px) {
   body.admin-bar .navbar-fixed-top {
     top: 28px; } }

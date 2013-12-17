@@ -114,3 +114,21 @@ come into play. Have fun!
 }
 
 
+.performer-list {
+  .performer-tile {
+    clear:none;
+    border:0;
+    img {
+      float:none;
+    }
+    a {
+      margin:1em 0;
+      font-size:24px;
+      &:hover {
+        text-decoration:none;
+      }
+    }
+  }
+}
+
+
